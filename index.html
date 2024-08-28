@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 class="heading">Stock Market Analysis</h1>
+    <div class="container">
+
+        <div class="sidebar">
+           
+            <ul id="stock-list"></ul>
+        </div>
+        <div class="main-content">
+            <div class="chart-section">
+                <div class="buttons">
+                    <button data-range="1month">1 Month</button>
+                    <button data-range="3months">3 Months</button>
+                    <button data-range="1year">1 Year</button>
+                    <button data-range="5years">5 Years</button>
+                </div>
+                <canvas id="stock-chart"></canvas>
+            </div>
+            <div class="details-section">
+                <h3>Stock Details</h3>
+                <p id="stock-name"></p>
+                <p id="stock-bookValue"></p>
+                <p id="stock-profit"></p>
+                <p id="stock-summary"></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
